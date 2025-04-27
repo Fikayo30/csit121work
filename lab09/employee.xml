@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<employees>
+    <employee id="tc001">
+        <firstname>Fikayo</firstname>
+        <lastname>Thanni</lastname>
+        <title> Lead Designer</title>
+        <division>Creative</division>
+        <building>101</building>
+        <room>10</room>
+    </employee>
+    <employee id="tc002">
+        <firstname>Bolu</firstname>
+        <lastname>Daramola</lastname>
+        <title>Finance Manager</title>
+        <division>Finance</division>
+        <building>102</building>
+        <room>12</room>
+    </employee>
+    <employee id="tc003">
+        <firstname>Tumi</firstname>
+        <lastname>Thanni</lastname>
+        <title>Textile Engineer</title>
+        <division>Fabric Manufacturing </division>
+        <building>105</building>
+        <room>16</room>
+    </employee>
+    <employee id="tc004">
+        <firstname>Jasmine</firstname>
+        <lastname>Dixon</lastname>
+        <title>Marketing Specialist</title>
+        <division>Marketing</division>
+        <building>104</building>
+        <room>18</room>
+    </employee>
+
+    <employee id="tc005">
+        <firstname>Mayor</firstname>
+        <lastname>Kumar</lastname>
+        <title>Social Media Manager</title>
+        <division>Social Media</division>
+        <building>106</building>
+        <room>20</room>
+    </employee>
+    <employee id="tc006">
+        <firstname>Kashout</firstname>
+        <lastname>Dan</lastname>
+        <title>Accountant</title>
+        <division>Finance</division>
+        <building>102</building>
+        <room>13</room>
+    </employee>
+    <employee id="tc008">
+        <firstname>Colm </firstname>
+        <lastname>Dillane</lastname>
+        <title>Head of Branding</title>
+        <division>Creative</division>
+        <building>101</building>
+        <room>11</room>
+    </employee>
+    <employee id="tc009">
+        <firstname>King</firstname>
+        <lastname>David</lastname>
+        <title>Photographer</title>
+        <division>Media</division>
+        <building>103</building>
+        <room>15</room>
+    </employee>
+</employees>

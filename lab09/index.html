@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TEAM TRUCULTR</title>
+
+  
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-top: 30px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 90%;
+            margin: 20px auto;
+            background-color: #ffffff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        th, td {
+            text-align: left;
+            padding: 12px;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        th {
+            background-color: #111827;
+            color: #ffffff;
+        }
+        .button {
+            display: block;
+            margin: 20px auto;
+            padding: 15px 30px;
+            font-size: 20px;
+            border: none;
+            border-radius: 25px;
+            background-color: #111827;
+            color: white;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #374151;
+        }
+    </style>
+
+    
+    <script>
+        function loadXMLDoc() {
+            let xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    empDetails(this);
+                }
+            };
+            xmlhttp.open("GET", "employee.xml", true);
+            xmlhttp.send();
+        }
+
+        function empDetails(xml) {
+            let i;
+            let xmlDoc = xml.responseXML;
+            let table = `
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Title</th>
+                    <th>Division</th>
+                    <th>Building</th>
+                    <th>Room</th>
+                </tr>`;
+            let x = xmlDoc.getElementsByTagName("employee");
+
+            for (i = 0; i < x.length; i++) {
+                table += "<tr><td>" +
+                    x[i].getElementsByTagName("firstname")[0].childNodes[0].nodeValue + "</td><td>" +
+                    x[i].getElementsByTagName("lastname")[0].childNodes[0].nodeValue + "</td><td>" +
+                    x[i].getElementsByTagName("title")[0].childNodes[0].nodeValue + "</td><td>" +
+                    x[i].getElementsByTagName("division")[0].childNodes[0].nodeValue + "</td><td>" +
+                    x[i].getElementsByTagName("building")[0].childNodes[0].nodeValue + "</td><td>" +
+                    x[i].getElementsByTagName("room")[0].childNodes[0].nodeValue + "</td></tr>";
+            }
+
+            document.getElementById("teamTable").innerHTML = table;
+        }
+    </script>
+</head>
+
+<body>
+    <h1>MEET THE TRUCULTR TEAM</h1>
+
+    <button type="button" class="button" onclick="loadXMLDoc()">
+        TEAM TRUCULTR
+    </button>
+
+    <table id="teamTable"></table>
+</body>
+</html>
