@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="tierlist.html">Tier List</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Contact Form</h1>
+    <form action="#" method="post">
+        
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" required></textarea><br>
+
+        
+        <label for="tier-ranking">Favorite Cartoon Tier:</label>
+        <select id="tier-ranking" name="tier-ranking" required>
+            <option value="S">S</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+        </select><br>
+
+        <label for="favorite-cartoon">Favorite Cartoon:</label>
+        <input type="radio" id="regular-show" name="favorite-cartoon" value="Regular Show" required> Regular Show
+        <input type="radio" id="rick-and-morty" name="favorite-cartoon" value="Rick and Morty" required> Rick and Morty<br>
+
+       
+        <label for="comments-optional">Would you like to share your thoughts on the tier list?</label>
+        <input type="checkbox" id="comments-optional" name="comments-optional"><br>
+
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
