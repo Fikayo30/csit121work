@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 08 Image Showcase</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+    
+<body>
+    <header>
+        <h1>Image Showcase</h1>
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" class="active">Home</a>
+            <a href="Image1.html">Image 1 (GIF)</a>
+            <a href="image2.html">Image 2 (PNG)</a>
+            <a href="image3.html">Image 3 (JPG)</a>
+            <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+              &#9776;
+            </a>
+          </div>
+          
+    </header>
+    <main>
+        <p>Hi, Welcome to my image showcase. I am a photographer,Click on the links above to check out my pictures! </p>
+   
+      </main>
+
+    <script>
+      function toggleNav() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+      </script>
+</body>
+</html>
